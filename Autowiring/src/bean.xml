@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="address" class="com.sudents.StudentAddress" autowire="byName">
+		<property name="studentAddress" value="Varanasi" />
+		
+	</bean>
+
+	<bean id="student" class="com.sudents.StudentsDetails">
+		<property name="studentId" value="101" />
+		<property name="studentName" value="Rameshwra Singh" />
+	</bean>
+
+	<bean id="college" class="com.college.College" autowire="byName">
+		<property name="collegeName" value="Up collehge" />
+
+	</bean>
+
+
+</beans>
